@@ -1,0 +1,94 @@
+#head
+{
+	color : blue ;
+	font-size : 28px ;
+	text-align : center ;
+	font-weight : bolder ;
+}
+
+body
+{
+	text-align : center ;
+	margin-top : 15px ;
+	background-color : rgb(255,255,224);
+}
+
+section.section1 {
+    border: 3px solid silver;
+	height : 50px ;
+	width : 65% ;
+	float : left ;
+	
+}
+section.section2 {
+    border: 3px solid silver;
+	height : 190px ;
+	width : 65% ;
+	float : left ;
+}
+section.section3 {
+    border: 3px solid silver;
+	height : 50px ;
+	width : 100% ;
+	float : left ;
+	 
+}
+section.section4 {
+    border: 3px solid silver;
+	height : 190px ;
+	width : 100% ;
+	float : left ;
+}
+.name
+{
+	font-size : 24px ;
+	color : red ;
+	text-align : center ;
+	vertical-align : center ;
+}
+.description
+{
+	font-size : 16px ;
+	color : blue ;
+	text-align : left ;
+	
+}
+img.img {
+    float: left;
+    width : 240px ;
+	height : 240px ;
+	padding-right: 40px ;
+	padding-left: 40px ;
+	 margin : 0px ;
+	 border : 1px solid blue ;
+	 
+}
+a
+{
+	font-size : 24px ;
+	text-align : left ;
+}
+span.name,span
+{
+	font-size : 36px ;
+	font-weight : bold ;
+}
+div.container
+{
+	width : 100% ;
+}
+#sidebarname
+{
+	color : red ;
+	
+}
+li.sidebaritem
+{
+	border : 1px solid black ;
+	background-color : rgb(255,250,250);
+}
+ul.nav
+{
+	overflow: scroll;
+}
+

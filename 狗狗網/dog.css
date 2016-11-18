@@ -1,0 +1,42 @@
+			body
+			{
+				margin-top : 10px ;
+				margin-left : 10% ;
+				margin-right : 10% ;
+			}
+			h1
+			{
+				color : maroon ;
+				font-size : 48px ;
+				text-align : center ;
+			}
+			h3
+			{
+				font-size : 28px ;
+			}
+			div.box
+			{
+				text-align : center ;
+			}
+			table,td,th,.container
+			{
+				border : 1px solid black ;
+				text-align : center ;
+			}
+			td.imgimg
+			{
+				width : 25% ;
+			}
+			div.title
+			{
+				font-size : 28px ;
+				color : red ;
+				border-bottom : 1px solid black ;
+			}
+			div.content
+			{
+				font-size : 20px ;
+				color : blue ;
+			}
+			
+			

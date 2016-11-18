@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+ol.sortable,ol.sortable ol {
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ol.sortable {
+	margin-left: 0px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ol.sortable li .well {
+	margin-bottom: 10px;
+	border:0px;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+ol.sortable li .well.navigation-invisible{
+	background-color: #ffffff;
+	border:1px dashed #d8d8d8;
+}
+
+.navigations-list-title{
+	display: inline-block;
+	width:300px;
+	cursor:move;
+}
+
+.navigations-list-url{
+	display: inline-block;	
+}
