@@ -1,0 +1,2 @@
+# smallthomas
+repository of thomas
