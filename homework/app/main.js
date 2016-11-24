@@ -7,3 +7,16 @@ function timer()
 	document.getElementById("time").innerHTML = time ;
 	setTimeout("timer()",1000) ;
 }
+
+function getData(){
+	//XMLHttpRequest 物件專門來和伺服器做連線
+	var req = new XMLHttpRequest();
+	req.open("GET","adver.json",true);
+	req.onload = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("marquee").innerHTML =
+	  this.responseText ;
+    }
+    };
+	req.send();//送出連線
+}
