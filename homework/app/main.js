@@ -11,12 +11,11 @@ function timer()
 function getData(){
 	//XMLHttpRequest 物件專門來和伺服器做連線
 	var req = new XMLHttpRequest();
-	req.open("GET","adver.json",true);
+	req.open("GET","adver.json");//(連線方法是用get,想要取得的資料/網址)
 	req.onload = function() {
-    if (this.readyState == 4 && this.status == 200) {
       document.getElementById("marquee").innerHTML =
 	  this.responseText ;
-    }
+	  //取得跑馬燈元素並且把從伺服器得到的content data放進去跑馬燈裡
     };
 	req.send();//送出連線
 }

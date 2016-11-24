@@ -4,8 +4,13 @@
   "description": "test",
   "main": "main.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "webpack": "^1.13.3"
+  },
   "scripts": {
+    "dev": "webpack --progress --colors --watch",
+    "deploy": "NODE_ENV=production webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
