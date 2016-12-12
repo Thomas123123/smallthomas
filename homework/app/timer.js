@@ -6,8 +6,9 @@ function timer()
 		var time = dt.getHours() + "時" + dt.getMinutes() + "分" + dt.getSeconds() + "秒" ;
 		document.getElementById("date").innerHTML = date ;
 		document.getElementById("time").innerHTML = time ;
-		setInterval("timer()",1000) ;
+		//setInterval("timer()",1000) ;
+		
 	}
 
-  // module.exports = timer ;
+   module.exports = timer ;
  

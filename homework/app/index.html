@@ -1,9 +1,8 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalabed=no">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<title>webpack test</title>
+		<link rel="stylesheet" type="text/css" href="/build/bundle.css">
 	</head>
 	<body>
 		<marquee id='marquee'>跑馬燈</marquee>
@@ -11,7 +10,14 @@
 			<p id = "date"></p>
 			<p id = "time"></p>
 		</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		$("marquee#marquee").click(function(){
+			$("p").hide();
+			});
+		});
+		</script>
 	</body>
-	<script type="text/javascript" src="timer.js"></script>
-	<script type="text/javascript" src="./bundle.js"></script>
+	<script type="text/javascript" src="/build/vendors.js"></script>
+	<script type="text/javascript" src="/build/app.js"></script>
 </html>

@@ -5,7 +5,7 @@ var port = 3000;
 
 app.use(express.static(__dirname + '/'));
 app.use(function(req, res) {
-  res.sendFile(__dirname + '/app/index.html')
+  res.sendFile(__dirname + '/index.html')
 });
 
 app.listen(port, function(error) {
