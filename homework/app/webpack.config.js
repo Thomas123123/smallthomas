@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
  var path = require('path'),
    	 webpack  = require('webpack'),
    	 CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin'),
@@ -59,6 +60,9 @@ module.exports = {
 };
 =======
 module.exports = {
+=======
+module.exports = {
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
 	   entry: './main.js',
 	   output: {
 	     filename: 'bundle.js'      
@@ -75,5 +79,9 @@ module.exports = {
 	    extensions: ['', '.js', 'jsx', '.json', '.css']
 	
 	   }
+<<<<<<< HEAD
+	};
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
+=======
 	};
 >>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)

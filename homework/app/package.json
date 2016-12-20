@@ -10,6 +10,7 @@
   },
   "devDependencies": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "autoprefixer": "^6.5.3",
 	"babel-eslint": "^7.0.0",
     "eslint": "^3.9.1",
@@ -70,6 +71,15 @@
 >>>>>>> parent of f17fa0d... no message
 =======
 >>>>>>> 40d8d7b7415f4671d808141d3f693fb9d307cba8
+=======
+    "express": "^4.14.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
+        "deploy": "NODE_ENV=production webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
   },
   "author": "",
   "license": "ISC"

@@ -8,6 +8,7 @@ function timer()
 		document.getElementById("time").innerHTML = time ;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		setInterval("timer()",1000) ;
 	}
 
@@ -25,4 +26,10 @@ function timer()
 
   // module.exports = timer ;
 >>>>>>> 40d8d7b7415f4671d808141d3f693fb9d307cba8
+=======
+		setInterval("timer()",1000) ;
+	}
+
+  // module.exports = timer ;
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
  
