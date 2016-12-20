@@ -1,17 +1,16 @@
  var path = require('path'),
- 	 webpack  = require('webpack'),
- 	 CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin'),
- 	 uglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin'),
- 	 ExtractTextPlugin = require("extract-text-webpack-plugin"),
- 	 providePlugin = require('webpack/lib/ProvidePlugin'),
- 	 hotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin'),
- 	 node_modules_dir = path.resolve(__dirname, 'node_modules');
+   	 webpack  = require('webpack'),
+   	 CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin'),
+   	 uglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin'),
+   	 ExtractTextPlugin = require("extract-text-webpack-plugin"),
+   	 providePlugin = require('webpack/lib/ProvidePlugin'),
+   	 hotModuleReplacementPlugin = require('webpack/lib/HotModuleReplacementPlugin')
 
 module.exports = {
    // entry: __dirname + '/main.js',
    entry : {
-             app : [path.join(__dirname)+ '/main.js'],
-             vendors : ['react','jquery']
+             app : [path.join(__dirname)+ '/src/main.js'],
+             vendors : ['react','jquery','bootstrap']
 	         },
    output: {
     filename: '[name].js',
@@ -22,8 +21,8 @@ module.exports = {
    module: {
      loaders: [
     	{ test: /\.js$/,
-	      exclude: node_modules_dir,
-	      loader: 'jsx-loader?harmony'
+	      exclude: /node_modules/,
+	      loader: 'jsx-loader?hamony'
 		  },
       {	test: /\.css$/,
        	loader: ExtractTextPlugin.extract("css-loader") 
