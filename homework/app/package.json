@@ -4,15 +4,12 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "babel": "^6.5.2",
-    "chai": "^3.5.0",
     "css-loader": "^0.26.0",
-    "jquery": "^3.1.1",
     "jsx-loader": "^0.13.2",
-    "mocha": "^3.2.0",
     "style-loader": "^0.13.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "autoprefixer": "^6.5.3",
 	"babel-eslint": "^7.0.0",
     "eslint": "^3.9.1",
@@ -39,10 +36,13 @@
     "uglify": "^0.1.5",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.3"
+=======
+    "express": "^4.14.0"
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/marquee.test.js",
     "dev": "webpack-dev-server --devtool eval --progress --colors",
+<<<<<<< HEAD
     "deploy": "NODE_ENV=production webpack -p",
     "start": "node server.js",
     "build": "webpack main.js ./build/bundle.js",
@@ -55,6 +55,11 @@
       "stage-0"
     ],
     "plugins": []
+=======
+        "deploy": "NODE_ENV=production webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  加入了plugin功能(HMR,extractText,commonsChunk,provide,uglify)
   },
   "author": "",
   "license": "ISC"

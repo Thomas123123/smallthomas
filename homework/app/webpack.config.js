@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  var path = require('path'),
    	 webpack  = require('webpack'),
    	 CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin'),
@@ -56,3 +57,23 @@ module.exports = {
    // })
    ]
 };
+=======
+module.exports = {
+	   entry: './main.js',
+	   output: {
+	     filename: 'bundle.js'      
+	   },
+	   module: {
+	     loaders: [
+	       { test: /\.css$/, loader: "style!css" },
+	       { test: /\.js$/, loader: 'jsx-loader?harmony' }
+	       // loaders ¥i¥H¹³ querystring ¤@¼Ë±µ¦¬°Ñ¼Æ
+	     ]
+	   },
+	   resolve: {
+	     // ³]©w«á¥u»Ý­n¼g require('file') ¦Ó¤£¥Î¼g¦¨ require('file.jsx')
+	    extensions: ['', '.js', 'jsx', '.json', '.css']
+	
+	   }
+	};
+>>>>>>> parent of cc8bd78... 1.webpack V2.0  åŠ å…¥äº†pluginåŠŸèƒ½(HMR,extractText,commonsChunk,provide,uglify)
