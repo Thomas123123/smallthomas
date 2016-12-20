@@ -7,6 +7,7 @@ function timer()
 		document.getElementById("date").innerHTML = date ;
 		document.getElementById("time").innerHTML = time ;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		setInterval("timer()",1000) ;
 	}
 
@@ -18,4 +19,10 @@ function timer()
 
    module.exports = timer ;
 >>>>>>> parent of f17fa0d... no message
+=======
+		setInterval("timer()",1000) ;
+	}
+
+  // module.exports = timer ;
+>>>>>>> 40d8d7b7415f4671d808141d3f693fb9d307cba8
  
